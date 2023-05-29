@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<!--
+    Tablas
+
+
+
+    ** Celda. <td></td>
+    ** Filas <tr></tr>
+    ** Encabezados <th></th>
+
+
+-->
+<p>Tablas de personas</p>
+    <br>
+<body>
+    <table>
+
+        <thead>
+            <tr>
+                <!--Fila 1-->
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Pais</th>
+            </tr>
+        </thead>
+
+            <tbody>
+                    <tr>
+                        <!--Fila 2-->
+                        <td>Isaac Campos</td>
+                        <td>24 años</td>
+                        <td>Chihuahua</td>
+                    </tr>
+                    
+                    <tr>
+                        <!--Fila 3-->
+                        <td>Evelyn</td>
+                        <td>25 años</td>
+                        <td>Santa fe</td>
+                    </tr>
+                    
+                    <tr>
+                        <!--Fila 4-->
+                        <td>Maori Espinoza</td>
+                        <td>22 años</td>
+                        <td>Tijuana</td>
+                    </tr>
+            </tbody>
+
+    </table>
+
+    <!--Tablita 2
+    Crear una tabla donde muestres el nombre, el apellido, el entrenador pokemon y su pokemon base
+    -->
+
+<br>
+<br>
+<br>
+<!--Titulod ela tabla
+para agregar un titulo de la tabla, utilizaremos la etiqueta 
+<caption> -->
+
+<br>
+<table>
+    <caption>Maestros Pokemon</caption>
+    <thead>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Pokemon</th>
+    </thead>
+
+        <body>
+            <tr>
+                <td>Osvaldo</td>
+                <td>Morales</td>
+                <td><a href="https://www.pokemon.com/el/pokedex/totodile" target="_blank">Tottodaile<a></td>
+            </tr>
+            <tr>
+                <td>Nancy</td>
+                <td>Perez</td>
+                <td>Moltres<br><img id="moltres" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png" alt="molstres"></td>
+            </tr>
+            <tr>
+                <td>Hiram</td>
+                <td>Navarro</td>
+                <td>Mew</td>
+            </tr>
+            <tr>
+                <td>Kevin</td>
+                <td>Gonzalez</td>
+                <td>MewTwo</td>
+            </tr>
+        </body>     
+</table>
+
+<br>
+<br>
+
+<!-- Instrucciones:
+Dise;a un horario de clases de lunes a viernes con 3 horarios (8:00 - 9:00; 9:00 - 10:00; 10:00 - 11:00) con las materias que gustes. Agrega estilos para que tu hoeaeio quede chido 
+-->
+
+
+<!--Vinculos HTML
+Los marcadores son utiles cuando tienes una pagina web muy larga para crear un marcador siga los siguientes pasos:
+1. Indicar un atributo (id) para el marcador
+2. Crear el marcador y agregar un enlace
+
+-->
+
+<br>
+
+    <a href="#parrafito3"> Parrafito 3</a>
+    
+    <br>
+
+    <a href="/html/login.html" >Incia secion</a> 
+    
+    <br>
+    <a href="/html/login.html#p4">Mira el parrafo 4 del login </a>
+    <p id="parrafito1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti nisi dolores corporis! Voluptatum numquam delectus voluptatibus magni unde, minima libero odit, accusamus officia, ratione ipsam. Impedit consequatur corrupti aut.</p>
+
+    <br>
+
+    <p id="parrafito2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti nisi dolores corporis! Voluptatum numquam delectus voluptatibus magni unde, minima libero odit, accusamus officia, ratione ipsam. Impedit consequatur corrupti aut.</p>
+
+    <br>
+    
+    <p id="parrafito3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti nisi dolores corporis! Voluptatum numquam delectus voluptatibus magni unde, minima libero odit, accusamus officia, ratione ipsam. Impedit consequatur corrupti aut.</p>
+<br>
+
+<!--Formularios de HTML
+    Elemento que se encarga de recopilar informacion del usuario para enviarlo a un servidor para su procesamiento 
+--- Elementos de un formulario
+<form></form> Se utiliza para crear un formulario HTML para la entrada de un formulario
+
+Diferentes tipos de entrada como campos de tecto, casillas de verificacion, botones de opion, botones de envio, etc.
+
+-->
+<hr>
+<form>
+    <label for="user">Nombre de usuario </label>
+    <input type="text"  id="user" name="user">
+</form>
+<!--Elemento <label>
+    Define una etiqueta para formularios y es util para los usuarios de lectores de pantalla. Cuando el usuario hace click dentro del elemento <label> alterna el boton de opcion/ casilla de verificacion.
+        - for: Debe ser igual al atributo id del elemento <input> para unirlos 
+    
+--- Elemento <input>
+    Es el elemento de formulario mas utilizado y se puede mostrar segun el atributo 'type' 
+    Tipos de input (type):
+        - text, Permite introducir texto
+        - password Perimte introducir una contrase;a y agrega asteriscos o puntos para ocultar la informacion 
+-->
+<form>
+    <label for="password" >Contrase;a</label>
+    <input type="password" id="password" name="password" required> 
+</form>
+<!-- number, Tipo numerico para elegir numeros, Se pueden definir numeros minimos-->
+<form>
+    <label for="edad" >Escribe tu edad</label>
+    <input type="number" id="edad" name="edad" required min="18" max="30"> 
+
+<!-- email 
+Solicita el uso de la arroba @ para escribir
+-->
+    <label for="correo_elect" >Escribe tu correo electronico</label>
+    <input type="email" id="correo_elect" name="correo_elect">
+    <br>
+    <br>
+    <!-- Si queremos un cuadro de texto para utilizar comentarios se utiliza la etiqueta textarea-->
+    <label for="comentarios" >Escribe un comentario</label>
+    <textarea name="comentarios" id="comentarios" placeholder="Maximo 15 palabras" ></textarea>
+    <br>
+    <br>
+    <!-- date. Despliega un calendario para seleccionar dia, mes y a;i en formato (dd-mm-aaaa)-->
+    <label for="nacimiento">Selecciona tu fecha de nacimiento</label>
+    <input type="date" id="nacimiento" name="nacimiento">
+    <br>
+    <br>
+    <!-- radio. Define un boton de opcion. Permite al usuaio seleccionarsolamente una opcion de un numero de opciones -->
+
+    <p>Elije tu lenguaje de prohramacion favorito</p>
+
+    <input type="radio" id="java" name="lenguaje_fav" value="java">
+    <label for="java"> Java</label><br>
+    <input type="radio" id="javascript" name="lenguaje_fav" value="javascript" >
+    <label for="javascript">javascript</label><br>
+    <input type="radio" id="python" name="lenguaje_fav" value="python">
+    <label for="python">Python</label>
+    <br>
+    <br>
+    <br>
+    <!-- chenckbox. Define una casilla de verificacion, donde el usuario puede seleccionar CERO o mas opciones de un numero limitado de opcionres
+    -->
+<p>Selecciona los idiomas que hablas</p>
+<input type="checkbox" id="idoma1" name="idioma1" value="english">
+<label for="idioma1">Ingles</label> 
+<br>
+<input type="checkbox" id="idioma2" name="idioma2" value="spanish">
+<label for="idioma2">Espa;ol</label>
+<br>
+<input type="checkbox" name="idioma3" id="idioma3" value="french">
+<label for="idioma3">Frances</label>
+
+<!-- file. Es un campo de seleccion de archivos y un boton "examinar" que permite cargar archivos-->
+<br>
+<br>
+<label for="miArchivo">Agrega aqui tu archivo</label>
+<input type="file" id="miArchivo" name="miArchivo">
+
+</form>
+<!--Botones
+    Perimten controlar el envio de informacion del usuario.
+    type="submit" envia al servidor lo que se escribe
+    type="reset" permite resetear la informacion contenida en el formulario
+
+-->
+<!--
+    Reto: diseñar un formulario de registro para una página de videojuegos. ¿Qué necesitamos?
+    Todos los campos deben ser obligatorios
+        - Nombre: "text"
+        - Apellido: "text"
+        - nombre de usuario: "text"
+        - Correo electrónico: "email"
+        - edad (mínimo 18 años): "number"
+        - Contraseña: "password"
+        - Botón que diga "Registrarse"
+        - Botón que diga "Limpiar formulario"
+
+-->
+
+<form action="/action_page.php" method="post" target="_blank">
+    <p>REGISTRO DE USUARIO</p>
+    <label for="name_user">Nombre del usuario </label>
+    <input type="text"  id="name_user" name="name_user" required>
+    <br><br>
+    <label for="last_name_user">Apellido del usuario</label>
+    <input type="text" id="last_name_user" name="last_name_user" required>
+    <br><br>
+    <label for="nick">Nombre de usuario</label>
+    <input type="text" id="nick" name="nick" required>
+    <br><br>
+    <label for="eda">Introduzca su edad</label>
+    <input type="number" min="18" max="99" id="eda" name="eda">
+    <br><br>
+    <label for="correoele">Introduzca su correo</label>
+    <input type="email" id="correoele" name="correoele" required>
+    <br><br>
+    <label for="contr">Introduzca su contrase;a</label>
+    <input type="password" id="contr" name="contr" required>
+    <br><br>
+   
+    <button type="submit" >Registrarse </button>
+    <button type="reset" >Limpiar Formulario</button>
+</form>
+<br>
+<br>
+<br>
+<!-- Boton enviar 
+    type='submit' define un boton para enviar los datos del formulario a un controlador de formulario. El controlador forulario suele ser un archivo con un script para procesar los datos de entrada
+    el controlador de formulario se especifica en el atributo action del formulario
+
+-->
+<h4>Inicia sesion</h4>
+<form action="/action_information.php" method="get">
+    <label for="nick">Nombre de usuario</label>
+    <input type="text" id="nick" name="nick" required>
+    <br><br>
+    <label for="contr">Introduzca su contrase;a</label>
+    <input type="password" id="contr" name="contr" required>
+    <br><br>
+    <button type="submit">Inicia sesion</button>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
